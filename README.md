@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Valentin Lukyanets</h1>
 <h3 align="center">Software Engineer from Lviv, Ukraine</h3>
 
-- 🔭 I’m currently working in **AMC Bridge, Inc.**
+- 🔭 I’m currently working in **Aspose Pty Ltd**
 
 - 🌱 I’m currently learning **OpenGL, Kubernetes, Go**
 
