@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working in **Aspose Pty Ltd**
 
-- 🌱 I’m currently learning **OpenGL, Kubernetes, Go**
+- 🌱 I’m currently learning **C#, DevOps tools, Go**
 
 - 💬 Ask me about **C/C++, Python, Docker**
 
