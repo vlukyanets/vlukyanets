@@ -24,5 +24,7 @@
 
 <h3 align="left">Achievements:</h3>
 <p align="left">
+<picture>
 <img src="https://projecteuler.net/profile/darkness.prophet.png"/>
+</picture>
 </p>
