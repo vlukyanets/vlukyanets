@@ -3,11 +3,13 @@
 
 - 🔭 I’m currently working in **Aspose Pty Ltd**
 
-- 🌱 I’m currently learning **C#, DevOps tools, Go, Dart/Flutter**
+- 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter**
+
+- 🔬 I'm currently investigating **React.JS** and especially **CSS**
 
 - 💬 Ask me about **C/C++, Python, Docker**
 
-- 📫 How to reach me: **valikluks95@protonmail.com**
+- 📫 How to reach me: **valikluks95@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
