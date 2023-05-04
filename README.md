@@ -5,7 +5,7 @@
 
 - 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter**
 
-- 🔬 I'm currently investigating **React.JS** and especially **CSS**
+- 🔬 I'm currently investigating **React.JS**
 
 - 💬 Ask me about **C/C++, Python, Docker**
 
