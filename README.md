@@ -20,11 +20,6 @@
 <a href="https://codeforces.com/profile/valikluks1995" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="Codeforces profile" height="40" width="40" /></a>
 </p>
 
-<h3 align="left">Second GitHub account:</h3>
-<p align="left">
-<a href="https://github.com/valentinl95" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Second GitHub profile" height="40" width="40" /> </a>
-</p>
-
 <h3 align="left">GitLab account:</h3>
 <p align="left">
 <a href="https://gitlab.com/vlukyanets" target="blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab profile" height="40" width="40" /> </a>
