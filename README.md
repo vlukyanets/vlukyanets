@@ -25,7 +25,7 @@
 <a href="https://gitlab.com/vlukyanets" target="blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab profile" height="40" width="40" /> </a>
 </p>
 
-<h3 align="left">Languages:</h3>
+<h3 align="left">Languages/Frameworks:</h3>
 <p align="left">
 <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/> </a>
 &emsp13;
