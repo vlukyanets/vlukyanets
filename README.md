@@ -3,9 +3,9 @@
 
 - 🔭 I’m currently working in **Aspose Pty Ltd**
 
-- 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter**
+- 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter, React.JS**
 
-- 🔬 I'm currently investigating **React.JS**
+- 🔬 I'm currently investigating **Rust**
 
 - 💬 Ask me about **C/C++, Python, Docker**
 
