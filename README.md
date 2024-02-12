@@ -3,9 +3,9 @@
 
 - 🔭 I’m currently working in **Aspose Pty Ltd**
 
-- 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter**
+- 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter, React.JS**
 
-- 🔬 I'm currently investigating **React.JS**
+- 🔬 I'm currently investigating **Rust**
 
 - 💬 Ask me about **C/C++, Python, Docker**
 
@@ -36,6 +36,7 @@
 <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40"/> </a>
 <a href="https://react.dev/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React.JS" width="40" height="40" /> </a>
 <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.JS" width="40" height="40" /> </a>
+<a href="https://www.rust-lang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg" alt="Rust" width="40" height="40"/> </a>
 </p>
 
 <h3 align="left">Tools:</h3>
