@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Valentin Lukyanets</h1>
 <h3 align="center">Software Engineer from :ukraine: Lviv, Ukraine :ukraine:</h3>
 
-- 🔭 I’m currently working in **Aspose Pty Ltd**
-
 - 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter, React.JS**
 
 - 🔬 I'm currently investigating **Rust**
