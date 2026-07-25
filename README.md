@@ -15,8 +15,6 @@
 &emsp13;
 <a href="https://stackoverflow.com/users/3691464/valentin-lukyanets" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="StackOverflow profile" height="40" width="40" /> </a>
 &emsp13;
-<a href="https://codeforces.com/profile/valikluks1995" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="Codeforces profile" height="40" width="40" /></a>
-</p>
 
 <h3 align="left">GitLab account:</h3>
 <p align="left">
