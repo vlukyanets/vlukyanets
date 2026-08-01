@@ -14,10 +14,10 @@ const LANGUAGES = [
 module.exports = (req, res) => {
   const language = LANGUAGES[Math.floor(Math.random() * LANGUAGES.length)];
 
-  res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=1800, stale-while-revalidate=1800');
+  res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=3600, stale-while-revalidate=3600');
   res.status(200).json({
     schemaVersion: 1,
-    label: "language of day",
+    label: "language of hour",
     message: language,
     color: 'blueviolet',
   });
