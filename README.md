@@ -4,6 +4,14 @@
 <p align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history" alt="Typing animation" />
 </p>
+<p align="center">
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
+<img src="https://img.shields.io/badge/coffee_consumed-10k%2B-6f4e37?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Coffee consumed" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
+<img src="https://img.shields.io/github/last-commit/vlukyanets/vlukyanets?style=flat-square" alt="Last commit" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=1800&style=flat-square" alt="Today's language" />
+</p>
 
 <table align="left">
 <tr><td>🌱</td><td>Interested in</td><td><b>DevOps tools, Go, Dart/Flutter</b></td></tr>
