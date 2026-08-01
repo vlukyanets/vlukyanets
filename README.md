@@ -8,6 +8,7 @@
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
 <img src="https://img.shields.io/badge/coffee_consumed-9001%2B-6f4e37?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Coffee consumed" />
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
 </p>
 
 <table align="left">
@@ -59,3 +60,7 @@
 <td align="center"><a href="https://www.ansible.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></a></td>
 </tr>
 </table>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=100&section=footer" alt="Footer banner" />
+</p>
