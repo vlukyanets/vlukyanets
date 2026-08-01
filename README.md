@@ -50,7 +50,7 @@
 <td align="center"><a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.JS" width="40" height="40" /></a></td>
 <td align="center"><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-plain.svg" alt="ASP.NET Core" width="40" height="40"/></a></td>
 <td align="center"><a href="https://tokio.rs/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/tokio" alt="Tokio" width="40" height="40"/></a></td>
-<td align="center"><a href="https://learn.microsoft.com/en-us/ef/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/-Entity_Framework-512BD4?style=flat-square&logo=.net&logoColor=white" alt="Entity Framework" height="40" /></a></td>
+<td align="center"><a href="https://learn.microsoft.com/en-us/ef/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/entityframeworkcore/entityframeworkcore-original.svg" alt="Entity Framework" width="40" height="40"/></a></td>
 </tr>
 </table>
 
