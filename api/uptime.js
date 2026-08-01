@@ -1,10 +1,24 @@
+const CHILLING_CHANCE = 0.1;
+
 module.exports = (req, res) => {
-  const totalMinutes = 5 + Math.floor(Math.random() * (20 * 60 - 5 + 1));
+  let message;
+  let color;
+
+  if (Math.random() < CHILLING_CHANCE) {
+    res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=1800, stale-while-revalidate=1800');
+    res.status(200).json({
+      schemaVersion: 1,
+      label: 'uptime',
+      message: 'chilling (offline)',
+      color: 'blue',
+    });
+    return;
+  }
+
+  const totalMinutes = 1 + Math.floor(Math.random() * (24 * 60 - 1 + 1));
   const hours = Math.floor(totalMinutes / 60);
   const minutes = totalMinutes % 60;
 
-  let message;
-  let color;
   if (hours < 1) {
     message = `${minutes}m (fresh)`;
     color = 'brightgreen';
