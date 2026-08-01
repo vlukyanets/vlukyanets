@@ -1,6 +1,8 @@
-<h1 align="center">Hi 👋, I'm Valentin Lukyanets</h1>
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer+from+%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine+%F0%9F%87%BA%F0%9F%87%A6;Currently+investigating+Rust;Solving+Project+Euler+problems;Open+to+collab" alt="Typing animation" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=140&section=header&text=Hi,%20I'm%20Valentin%20Lukyanets&fontSize=32&fontColor=F7F7F7&animation=fadeIn" alt="Header banner" />
+</p>
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer+from+%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine+%F0%9F%87%BA%F0%9F%87%A6;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems" alt="Typing animation" />
 </p>
 <p align="center">
 <img src="https://img.shields.io/badge/uptime-14h_32m_(needs_coffee)-critical?style=flat-square" alt="Uptime" />
