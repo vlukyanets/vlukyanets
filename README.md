@@ -9,6 +9,7 @@
 <img src="https://img.shields.io/badge/coffee_consumed-9001%2B-6f4e37?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Coffee consumed" />
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" />
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
+<img src="https://img.shields.io/github/last-commit/vlukyanets/vlukyanets?style=flat-square" alt="Last commit" />
 </p>
 
 <table align="left">
