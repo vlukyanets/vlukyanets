@@ -1,5 +1,9 @@
-<h1 align="center">Hi 👋, I'm Valentin Lukyanets</h1>
-<h3 align="center">Software Engineer from :ukraine: Lviv, Ukraine :ukraine:</h3>
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=140&section=header&text=Hi,%20I'm%20Valentin%20Lukyanets&fontSize=32&fontColor=F7F7F7&animation=fadeIn" alt="Header banner" />
+</p>
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history" alt="Typing animation" />
+</p>
 
 <table align="left">
 <tr><td>🌱</td><td>Interested in</td><td><b>DevOps tools, Go, Dart/Flutter</b></td></tr>
@@ -50,3 +54,7 @@
 <td align="center"><a href="https://www.ansible.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></a></td>
 </tr>
 </table>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=100&section=footer" alt="Footer banner" />
+</p>
