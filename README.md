@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer+from+%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine+%F0%9F%87%BA%F0%9F%87%A6;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems" alt="Typing animation" />
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/uptime-14h_32m_(needs_coffee)-critical?style=flat-square" alt="Uptime" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
 <img src="https://img.shields.io/badge/coffee_consumed-9001%2B-6f4e37?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Coffee consumed" />
 </p>
 
