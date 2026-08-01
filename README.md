@@ -10,6 +10,7 @@
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" />
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
 <img src="https://img.shields.io/github/last-commit/vlukyanets/vlukyanets?style=flat-square" alt="Last commit" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=1800&style=flat-square" alt="Today's language" />
 </p>
 
 <table align="left">
