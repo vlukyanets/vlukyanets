@@ -20,7 +20,7 @@
 <tr><td>📫</td><td>Reach me</td><td><a href="mailto:valikluks95@gmail.com"><b>valikluks95@gmail.com</b></a></td></tr>
 </table>
 
-<h3 align="center">Connect with me:</h3>
+<h3 align="center">Profiles:</h3>
 <table align="center">
 <tr>
 <td align="center"><a href="https://linkedin.com/in/vlukyanets" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="40" width="40" /></a></td>
@@ -50,6 +50,7 @@
 <td align="center"><a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.JS" width="40" height="40" /></a></td>
 <td align="center"><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-plain.svg" alt="ASP.NET Core" width="40" height="40"/></a></td>
 <td align="center"><a href="https://tokio.rs/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/tokio" alt="Tokio" width="40" height="40"/></a></td>
+<td align="center"><a href="https://learn.microsoft.com/en-us/ef/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/-Entity_Framework-512BD4?style=flat-square&logo=.net&logoColor=white" alt="Entity Framework" height="40" /></a></td>
 </tr>
 </table>
 
