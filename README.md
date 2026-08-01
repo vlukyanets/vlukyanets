@@ -41,6 +41,7 @@
 <td align="center"><a href="https://www.rust-lang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg" alt="Rust" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/></a></td>
+<td align="center"><a href="https://kotlinlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="40" height="40"/></a></td>
 </tr>
 </table>
 
@@ -51,6 +52,8 @@
 <td align="center"><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-plain.svg" alt="ASP.NET Core" width="40" height="40"/></a></td>
 <td align="center"><a href="https://tokio.rs/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/tokio" alt="Tokio" width="40" height="40"/></a></td>
 <td align="center"><a href="https://learn.microsoft.com/en-us/ef/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/entityframeworkcore/entityframeworkcore-original.svg" alt="Entity Framework" width="40" height="40"/></a></td>
+<td align="center"><a href="https://developer.android.com/jetpack/compose" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/jetpackcompose" alt="Jetpack Compose" width="40" height="40"/></a></td>
+<td align="center"><a href="https://developer.android.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" alt="Android" width="40" height="40"/></a></td>
 </tr>
 </table>
 
