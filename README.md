@@ -18,6 +18,7 @@
 <td align="center"><a href="https://linkedin.com/in/vlukyanets" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://gitlab.com/vlukyanets" target="blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://projecteuler.net/progress=darkness.prophet" target="blank"><img src="https://projecteuler.net/profile/darkness.prophet.png" alt="Project Euler profile" height="40" /></a></td>
+<td align="center"><a href="https://www.codewars.com/users/vlukyanets" target="blank"><img src="https://cdn.simpleicons.org/codewars/AA0000" alt="Codewars profile" height="40" width="40" /></a></td>
 </tr>
 </table>
 
