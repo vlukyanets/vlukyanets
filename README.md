@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=140&section=header&text=Hi,%20I'm%20Valentin%20Lukyanets&fontSize=32&fontColor=F7F7F7&animation=fadeIn" alt="Header banner" />
 </p>
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words%2C+clean+commit+history%2C+nor+vibecoding" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history" alt="Typing animation" />
 </p>
 <p align="center">
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
