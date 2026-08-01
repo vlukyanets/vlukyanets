@@ -1,14 +1,13 @@
 <h1 align="center">Hi 👋, I'm Valentin Lukyanets</h1>
 <h3 align="center">Software Engineer from :ukraine: Lviv, Ukraine :ukraine:</h3>
 
-- 🌱 I’m interested in to **C#, DevOps tools, Go, Dart/Flutter, React.JS**
-
-- 🔬 I'm currently investigating **Rust**
-
-- 💬 Ask me about **C/C++, Python, Docker**
-
-- 📫 How to reach me: **valikluks95@gmail.com**
-
+<table align="left">
+<tr><td>🌱</td><td>Interested in</td><td><b>DevOps tools, Go, Dart/Flutter</b></td></tr>
+<tr><td>🔬</td><td>Currently investigating</td><td><b>new language internals</b></td></tr>
+<tr><td>💬</td><td>Ask me about</td><td><b>build/tooling workflows</b></td></tr>
+<tr><td>📫</td><td>Reach me</td><td><a href="mailto:valikluks95@gmail.com"><b>valikluks95@gmail.com</b></a></td></tr>
+</table>
+<br clear="left">
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/vlukyanets" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="40" width="40" /> </a>
@@ -37,7 +36,7 @@
 
 <h3 align="left">Tools:</h3>
 <p align="left">
-<a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/> </a>
+<a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/> </a>
 &emsp13;
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/> </a>
 &emsp13;
@@ -51,7 +50,7 @@
 &emsp13;
 <a href="https://www.vim.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" alt="vim" width="40" height="40"/> </a>
 &emsp13;
-<a href="https://www.jetbrains.com/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/jetbrains/jetbrains-original.svg" alt="jetbrains" width="40" height="40"/> </a>
+<a href="https://www.jetbrains.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jetbrains/jetbrains-original.svg" alt="jetbrains" width="40" height="40"/> </a>
 &emsp13;
 <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="visual studio" width="40" height="40"/> </a>
 &emsp13;
