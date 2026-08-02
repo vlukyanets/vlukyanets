@@ -80,6 +80,7 @@
 <td align="center"><a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" height="40"/></a></td>
 <td align="center"><a href="https://claude.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/claude" alt="Claude" width="40" height="40"/></a></td>
 <td align="center"><a href="https://gemini.google.com/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/googlegemini" alt="Gemini" width="40" height="40"/></a></td>
+<td align="center"><a href="https://lmstudio.ai/" target="_blank" rel="noreferrer"><img src="https://cdn.simpleicons.org/lmstudio" alt="LM Studio" width="40" height="40"/></a></td>
 </tr>
 </table>
 
