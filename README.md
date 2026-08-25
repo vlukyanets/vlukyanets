@@ -28,6 +28,7 @@
 <td align="center"><a href="https://projecteuler.net/progress=darkness.prophet" target="blank"><img src="https://projecteuler.net/profile/darkness.prophet.png" alt="Project Euler profile" height="40" /></a></td>
 <td align="center"><a href="https://www.codewars.com/users/vlukyanets" target="blank"><img src="https://cdn.simpleicons.org/codewars/AA0000" alt="Codewars profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://data.uoi.ua/people/846923?lang=en" target="blank"><img src="https://static.wixstatic.com/media/bcd241_ef0fac3020a34388aebcff0c5370141a~mv2.png" alt="UOI profile" height="40" /></a></td>
+<td align="center"><a href="https://rosalind.info/users/valikluks95" target="blank"><img src="https://rosalind.info/static/img/logo.png?v=1637535648" alt="Rosalind profile" height="40" /></a></td>
 </tr>
 </table>
 
