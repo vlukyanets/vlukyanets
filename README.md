@@ -62,23 +62,24 @@
 <table align="center">
 <tr>
 <td align="center"><a href="https://www.gnu.org/software/bash/" title="bash"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></a></td>
-<td align="center"><a href="https://www.docker.com/" title="docker"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a></td>
-<td align="center"><a href="https://git-scm.com/" title="git"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.kernel.org/" title="linux"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a></td>
+<td align="center"><a href="https://git-scm.com/" title="git"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a></td>
+<td align="center"><a href="https://www.docker.com/" title="docker"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a></td>
+<td align="center"><a href="https://kubernetes.io/" title="Kubernetes"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a></td>
+<td align="center"><a href="https://www.ansible.com" title="ansible"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></a></td>
+<td align="center"><a href="https://github.com/features/actions" title="GitHub Actions"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="40" height="40"/></a></td>
 <td align="center"><a href="https://cmake.org/" title="cmake"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/></a></td>
 </tr>
+</table>
+
+<table align="center">
 <tr>
 <td align="center"><a href="https://www.vim.org/" title="vim"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" alt="vim" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.jetbrains.com/" title="jetbrains"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jetbrains/jetbrains-original.svg" alt="jetbrains" width="40" height="40"/></a></td>
 <td align="center"><a href="https://visualstudio.microsoft.com/" title="visual studio"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="visual studio" width="40" height="40"/></a></td>
 <td align="center"><a href="https://code.visualstudio.com" title="visual studio code"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="visual studio code" width="40" height="40"/></a></td>
-<td align="center"><a href="https://www.ansible.com" title="ansible"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></a></td>
-<td align="center"><a href="https://kubernetes.io/" title="Kubernetes"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/features/actions" title="GitHub Actions"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="40" height="40"/></a></td>
-<td align="center"><a href="https://redis.io/" title="Redis"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.postgresql.org/" title="PostgreSQL"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" height="40"/></a></td>
+<td align="center"><a href="https://redis.io/" title="Redis"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" width="40" height="40"/></a></td>
 <td align="center"><a href="https://claude.com/" title="Claude"><img src="https://cdn.simpleicons.org/claude" alt="Claude" width="40" height="40"/></a></td>
 <td align="center"><a href="https://gemini.google.com/" title="Gemini"><img src="https://cdn.simpleicons.org/googlegemini" alt="Gemini" width="40" height="40"/></a></td>
 <td align="center"><a href="https://lmstudio.ai/" title="LM Studio"><img src="https://cdn.simpleicons.org/lmstudio" alt="LM Studio" width="40" height="40"/></a></td>
