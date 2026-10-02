@@ -2,12 +2,13 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
-const call = async (name) => {
+const call = async (name, req = {}) => {
   const res = { headers: {} };
   res.setHeader = (key, value) => { res.headers[key] = value; };
   res.status = (code) => { res.statusCode = code; return res; };
   res.json = (body) => { res.body = body; };
-  await require(`../api/${name}`)({}, res);
+  res.redirect = (code, url) => { res.statusCode = code; res.location = url; };
+  await require(`../api/${name}`)(req, res);
   return res;
 };
 
@@ -35,6 +36,13 @@ test('language stays the same within an hour', async (t) => {
   const first = (await call('language')).body.message;
   Date.now.mock.mockImplementation(() => hourStart + 3599 * 1000);
   assert.strictEqual((await call('language')).body.message, first);
+});
+
+test('language link redirects to Wikipedia', async (t) => {
+  t.mock.method(Date, 'now', () => Date.UTC(2026, 0, 1, 12));
+  const res = await call('language', { query: { go: '' } });
+  assert.strictEqual(res.statusCode, 302);
+  assert.match(res.location, /^https:\/\/en\.wikipedia\.org\/wiki\/\S+$/);
 });
 
 test('codewars colors the badge by rank', () => withFetch(
