@@ -28,7 +28,7 @@
 <a href="https://www.codewars.com/users/vlukyanets" title="Codewars profile"><img hspace="6" src="https://cdn.simpleicons.org/codewars/AA0000" alt="Codewars profile" height="40" width="40" /></a>
 <a href="https://www.spoj.com/users/valikluks95/" title="SPOJ profile"><img hspace="6" src="https://cdn.simpleicons.org/spoj" alt="SPOJ profile" height="40" width="40" /></a>
 <a href="https://rosalind.info/users/valikluks95" title="Rosalind profile"><img hspace="6" src="assets/rosalind-icon.png" alt="Rosalind profile" height="40" width="40" /></a>
-<a href="https://uoi.ua/en/data/people/846923" title="UOI profile"><img hspace="6" src="assets/uoi.png" alt="UOI profile" height="40" /></a>
+<a href="https://uoi.ua/en/data/people/846923" title="UOI profile"><img hspace="6" src="assets/uoi-icon.png" alt="UOI profile" height="40" width="40" /></a>
 </p>
 
 <h3 align="center">Zone of interests:</h3>
