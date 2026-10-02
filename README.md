@@ -64,7 +64,6 @@
 <td align="center"><a href="https://www.gnu.org/software/bash/" title="bash"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.docker.com/" title="docker"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a></td>
 <td align="center"><a href="https://git-scm.com/" title="git"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a></td>
-<td align="center"><a href="https://heroku.com" title="heroku"><img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.linux.org/" title="linux"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a></td>
 <td align="center"><a href="https://cmake.org/" title="cmake"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/></a></td>
 </tr>
