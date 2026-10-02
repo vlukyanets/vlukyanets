@@ -13,7 +13,7 @@ deployed at https://vlukyanets.vercel.app.
   weekly and opens an issue on failures; actions are pinned by SHA and bumped by Dependabot.
 
 ## Commits and branches
-- If only small fix should be applied, do it in master; otherwise work in separate branch
+- Make changes in separate branch
 - Branch names are short, lowercase, hyphenated and say what changes
   (`add-some-new-site`); no generated names or `claude/` prefixes.
 - Subject: one line, imperative, plain language. Body: optional, one paragraph.
