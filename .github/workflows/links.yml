@@ -30,6 +30,7 @@ jobs:
             https://vlukyanets.vercel.app/api/codewars
             https://vlukyanets.vercel.app/api/mood
             https://vlukyanets.vercel.app/api/language
+            https://vlukyanets.vercel.app/api/coffee
           fail: false
       # reuse the open issue instead of filing a new one every week
       - id: issue

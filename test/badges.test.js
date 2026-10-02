@@ -24,8 +24,8 @@ const withFetch = async (fake, fn) => {
   try { await fn(); } finally { global.fetch = realFetch; }
 };
 
-test('uptime, mood and language return shields endpoint JSON', async () => {
-  for (const name of ['uptime', 'mood', 'language']) {
+test('uptime, mood, language and coffee return shields endpoint JSON', async () => {
+  for (const name of ['uptime', 'mood', 'language', 'coffee']) {
     for (let i = 0; i < 50; i++) assertBadge(await call(name));
   }
 });
@@ -43,6 +43,11 @@ test('language link redirects to Wikipedia', async (t) => {
   const res = await call('language', { query: { go: '' } });
   assert.strictEqual(res.statusCode, 302);
   assert.match(res.location, /^https:\/\/en\.wikipedia\.org\/wiki\/\S+$/);
+});
+
+test('coffee counts 1000 cups a year since 3 Feb 2014', async (t) => {
+  t.mock.method(Date, 'now', () => Date.UTC(2014, 1, 3) + 365.25 * 24 * 60 * 60 * 1000);
+  assert.strictEqual((await call('coffee')).body.message, '1,000 cups');
 });
 
 test('codewars colors the badge by rank', () => withFetch(

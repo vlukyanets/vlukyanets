@@ -6,7 +6,7 @@
 </p>
 <p align="center">
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
-<img src="https://img.shields.io/badge/coffee_consumed-10k%2B-6f4e37?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Coffee consumed" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/coffee&cacheSeconds=1800&style=flat-square" alt="Coffee consumed" />
 <a href="https://www.codewars.com/users/vlukyanets"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" /></a>
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
 <a href="https://vlukyanets.vercel.app/api/language?go" title="Read about this language"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=300&style=flat-square" alt="Language of hour" /></a>
