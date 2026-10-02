@@ -1,3 +1,5 @@
+const badge = require('./_badge');
+
 const MOODS = [
   { message: 'compiling', color: 'blue' },
   { message: 'debugging', color: 'orange' },
@@ -17,12 +19,5 @@ const MOODS = [
 
 module.exports = (req, res) => {
   const mood = MOODS[Math.floor(Math.random() * MOODS.length)];
-
-  res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=1800, stale-while-revalidate=1800');
-  res.status(200).json({
-    schemaVersion: 1,
-    label: 'current mood',
-    message: mood.message,
-    color: mood.color,
-  });
+  badge(res, 'current mood', mood.message, mood.color);
 };

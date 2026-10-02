@@ -15,15 +15,18 @@ jobs:
       - id: lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          # these sites answer 403 to bots but work in a browser
+          # excluded sites answer 403 to bots but work in a browser;
+          # badge endpoints are checked directly since shields.io answers 200 even when they are down
           args: >-
             --no-progress
             --exclude projecteuler\.net
-            --exclude cprogramming\.com
             --exclude gnu\.org
-            --exclude linux\.org
             --exclude spoj\.com
             README.md
+            https://vlukyanets.vercel.app/api/uptime
+            https://vlukyanets.vercel.app/api/codewars
+            https://vlukyanets.vercel.app/api/mood
+            https://vlukyanets.vercel.app/api/language
           fail: false
       - if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0

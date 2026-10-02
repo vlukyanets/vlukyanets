@@ -1,8 +1,8 @@
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=140&section=header&text=Hi,%20I'm%20Valentin%20Lukyanets&fontSize=32&fontColor=F7F7F7&animation=fadeIn" alt="Header banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=140&section=header&text=Hi,%20I'm%20Valentin%20Lukyanets&fontSize=32&fontColor=F7F7F7&animation=fadeIn" alt="Hi, I'm Valentin Lukyanets" />
 </p>
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Average+Python+enjoyer;Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history;Pair+programming+with+an+LLM;I+use+Arch+Linux+BTW;Happy+father+of+dogs+and+parrots" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Average+Python+enjoyer;Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history;Pair+programming+with+an+LLM;I+use+Arch+Linux+BTW;Happy+father+of+dogs+and+parrots" alt="Software Engineer from Lviv, Ukraine. C/C++ veteran, average Python enjoyer, currently investigating Rust, Docker enthusiast, former competitive programmer, solving Project Euler problems, enjoys teaching and mentoring, happy father of dogs and parrots." />
 </p>
 <p align="center">
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
@@ -36,12 +36,12 @@
 <h3 align="center">Zone of interests:</h3>
 <table align="center">
 <tr>
-<td align="center"><a href="https://www.cprogramming.com/" title="C"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/></a></td>
+<td align="center"><a href="https://en.cppreference.com/w/c" title="C"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/></a></td>
 <td align="center"><a href="https://isocpp.org/" title="C++"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.python.org" title="Python"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a></td>
 <td align="center"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" title="C#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.rust-lang.org/" title="Rust"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg" alt="Rust" width="40" height="40"/></a></td>
-<td align="center"><a href="https://www.javascript.com/" title="JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a></td>
+<td align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.typescriptlang.org/" title="TypeScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/></a></td>
 <td align="center"><a href="https://kotlinlang.org/" title="Kotlin"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="40" height="40"/></a></td>
 </tr>
@@ -64,7 +64,7 @@
 <td align="center"><a href="https://www.gnu.org/software/bash/" title="bash"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.docker.com/" title="docker"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a></td>
 <td align="center"><a href="https://git-scm.com/" title="git"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a></td>
-<td align="center"><a href="https://www.linux.org/" title="linux"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a></td>
+<td align="center"><a href="https://www.kernel.org/" title="linux"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a></td>
 <td align="center"><a href="https://cmake.org/" title="cmake"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/></a></td>
 </tr>
 <tr>
@@ -86,5 +86,5 @@
 </table>
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=100&section=footer" alt="Footer banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=100&section=footer" alt="" />
 </p>
