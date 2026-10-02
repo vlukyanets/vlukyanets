@@ -31,9 +31,16 @@ jobs:
             https://vlukyanets.vercel.app/api/mood
             https://vlukyanets.vercel.app/api/language
           fail: false
+      # reuse the open issue instead of filing a new one every week
+      - id: issue
+        if: steps.lychee.outputs.exit_code != 0
+        run: echo "number=$(gh issue list --label broken-links --state open --limit 1 --json number --jq '.[0].number')" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
       - if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
         with:
+          issue-number: ${{ steps.issue.outputs.number }}
           title: Broken links in README
           content-filepath: ./lychee/out.md
           labels: broken-links
