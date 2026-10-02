@@ -1,5 +1,10 @@
 const badge = require('./_badge');
 
+// Codewars rank colors as they appear on the site
+const RANK_COLORS = {
+  white: 'e6e6e6', yellow: 'ecb613', blue: '3c7ebb', purple: '866cc7', black: '333333', red: 'b1361e',
+};
+
 module.exports = async (req, res) => {
   let data;
   try {
@@ -16,5 +21,6 @@ module.exports = async (req, res) => {
 
   const completed = data.codeChallenges?.totalCompleted ?? 0;
   const rank = data.ranks?.overall?.name ?? 'unranked';
-  badge(res, 'codewars', `${completed} kata solved (${rank})`, 'red');
+  const color = RANK_COLORS[data.ranks?.overall?.color] ?? 'lightgrey';
+  badge(res, 'codewars', `${completed} kata solved (${rank})`, color);
 };
