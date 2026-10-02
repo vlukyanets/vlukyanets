@@ -1,5 +1,10 @@
 {
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- api/ vercel.json",
   "redirects": [
-    { "source": "/", "destination": "https://github.com/vlukyanets", "permanent": false }
+    {
+      "source": "/",
+      "destination": "https://github.com/vlukyanets",
+      "permanent": false
+    }
   ]
 }
