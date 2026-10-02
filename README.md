@@ -19,9 +19,9 @@
 <tr><td>📫 Reach me</td><td><a href="mailto:valikluks95@gmail.com"><b>valikluks95@gmail.com</b></a></td></tr>
 </table>
 
-<h3 align="center">Profiles:</h3>
+<h3 align="center">Profiles</h3>
 <p align="center">
-<a href="https://linkedin.com/in/vlukyanets" title="LinkedIn Profile"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn Profile" height="40" width="40" /></a>
+<a href="https://linkedin.com/in/vlukyanets" title="LinkedIn profile"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn profile" height="40" width="40" /></a>
 <a href="https://gitlab.com/vlukyanets" title="GitLab profile"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab profile" height="40" width="40" /></a>
 <a href="https://projecteuler.net/progress=darkness.prophet" title="Project Euler profile"><img hspace="6" src="assets/projecteuler-icon.png" alt="Project Euler profile" height="40" width="40" /></a>
 <a href="https://www.codewars.com/users/vlukyanets" title="Codewars profile"><img hspace="6" src="https://cdn.simpleicons.org/codewars/AA0000" alt="Codewars profile" height="40" width="40" /></a>
@@ -33,7 +33,7 @@
 <a href="https://projecteuler.net/progress=darkness.prophet" title="Project Euler progress"><img src="https://projecteuler.net/profile/darkness.prophet.png" alt="Project Euler progress" width="200" height="60" /></a>
 </p>
 
-<h3 align="center">Zone of interests:</h3>
+<h3 align="center">Areas of interest</h3>
 <p align="center">
 <a href="https://en.cppreference.com/w/c" title="C"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/></a>
 <a href="https://isocpp.org/" title="C++"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/></a>
@@ -46,8 +46,8 @@
 </p>
 
 <p align="center">
-<a href="https://react.dev/" title="React.JS"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React.JS" width="40" height="40" /></a>
-<a href="https://nextjs.org/" title="Next.JS"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/nextdotjs/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.JS" width="40" height="40" /></picture></a>
+<a href="https://react.dev/" title="React"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="40" height="40" /></a>
+<a href="https://nextjs.org/" title="Next.js"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/nextdotjs/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.js" width="40" height="40" /></picture></a>
 <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" title="ASP.NET Core"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/dotnet/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-plain.svg" alt="ASP.NET Core" width="40" height="40"/></picture></a>
 <a href="https://tokio.rs/" title="Tokio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/tokio/white"><img hspace="6" src="https://cdn.simpleicons.org/tokio" alt="Tokio" width="40" height="40"/></picture></a>
 <a href="https://learn.microsoft.com/en-us/ef/" title="Entity Framework"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/entityframeworkcore/entityframeworkcore-original.svg" alt="Entity Framework" width="40" height="40"/></a>
@@ -56,21 +56,21 @@
 </p>
 
 <p align="center">
-<a href="https://www.gnu.org/software/bash/" title="bash"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/gnubash/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></picture></a>
-<a href="https://www.kernel.org/" title="linux"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a>
-<a href="https://git-scm.com/" title="git"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/></a>
-<a href="https://www.docker.com/" title="docker"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a>
+<a href="https://www.gnu.org/software/bash/" title="Bash"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/gnubash/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="Bash" width="40" height="40"/></picture></a>
+<a href="https://www.kernel.org/" title="Linux"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux" width="40" height="40"/></a>
+<a href="https://git-scm.com/" title="Git"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" width="40" height="40"/></a>
+<a href="https://www.docker.com/" title="Docker"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/></a>
 <a href="https://kubernetes.io/" title="Kubernetes"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a>
-<a href="https://www.ansible.com" title="ansible"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/ansible/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></picture></a>
+<a href="https://www.ansible.com" title="Ansible"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/ansible/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="Ansible" width="40" height="40"/></picture></a>
 <a href="https://github.com/features/actions" title="GitHub Actions"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="40" height="40"/></a>
-<a href="https://cmake.org/" title="cmake"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/></a>
+<a href="https://cmake.org/" title="CMake"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="CMake" width="40" height="40"/></a>
 </p>
 
 <p align="center">
-<a href="https://www.vim.org/" title="vim"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" alt="vim" width="40" height="40"/></a>
-<a href="https://www.jetbrains.com/" title="jetbrains"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jetbrains/jetbrains-original.svg" alt="jetbrains" width="40" height="40"/></a>
-<a href="https://visualstudio.microsoft.com/" title="visual studio"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="visual studio" width="40" height="40"/></a>
-<a href="https://code.visualstudio.com" title="visual studio code"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="visual studio code" width="40" height="40"/></a>
+<a href="https://www.vim.org/" title="Vim"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vim/vim-original.svg" alt="Vim" width="40" height="40"/></a>
+<a href="https://www.jetbrains.com/" title="JetBrains"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jetbrains/jetbrains-original.svg" alt="JetBrains" width="40" height="40"/></a>
+<a href="https://visualstudio.microsoft.com/" title="Visual Studio"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio" width="40" height="40"/></a>
+<a href="https://code.visualstudio.com" title="Visual Studio Code"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="Visual Studio Code" width="40" height="40"/></a>
 <a href="https://www.postgresql.org/" title="PostgreSQL"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="40" height="40"/></a>
 <a href="https://redis.io/" title="Redis"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" width="40" height="40"/></a>
 <a href="https://claude.com/" title="Claude"><img hspace="6" src="https://cdn.simpleicons.org/claude" alt="Claude" width="40" height="40"/></a>
