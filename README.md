@@ -25,10 +25,10 @@
 <tr>
 <td align="center"><a href="https://linkedin.com/in/vlukyanets" title="LinkedIn Profile"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://gitlab.com/vlukyanets" title="GitLab profile"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab profile" height="40" width="40" /></a></td>
-<td align="center"><a href="https://projecteuler.net/progress=darkness.prophet" title="Project Euler profile"><img src="https://projecteuler.net/profile/darkness.prophet.png" alt="Project Euler profile" height="40" /></a></td>
+<td align="center"><a href="https://projecteuler.net/progress=darkness.prophet" title="Project Euler profile"><img src="assets/projecteuler-icon.png" alt="Project Euler profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://www.codewars.com/users/vlukyanets" title="Codewars profile"><img src="https://cdn.simpleicons.org/codewars/AA0000" alt="Codewars profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://www.spoj.com/users/valikluks95/" title="SPOJ profile"><img src="https://cdn.simpleicons.org/spoj" alt="SPOJ profile" height="40" width="40" /></a></td>
-<td align="center"><a href="https://rosalind.info/users/valikluks95" title="Rosalind profile"><img src="assets/rosalind.png" alt="Rosalind profile" height="40" /></a></td>
+<td align="center"><a href="https://rosalind.info/users/valikluks95" title="Rosalind profile"><img src="assets/rosalind-icon.png" alt="Rosalind profile" height="40" width="40" /></a></td>
 <td align="center"><a href="https://uoi.ua/en/data/people/846923" title="UOI profile"><img src="assets/uoi.png" alt="UOI profile" height="40" /></a></td>
 </tr>
 </table>
