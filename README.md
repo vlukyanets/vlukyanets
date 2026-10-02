@@ -22,7 +22,7 @@
 
 <h3 align="center">Profiles:</h3>
 <p align="center">
-<a href="https://linkedin.com/in/vlukyanets" title="LinkedIn Profile"><img hspace="6" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Profile" height="40" width="40" /></a>
+<a href="https://linkedin.com/in/vlukyanets" title="LinkedIn Profile"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn Profile" height="40" width="40" /></a>
 <a href="https://gitlab.com/vlukyanets" title="GitLab profile"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg" alt="GitLab profile" height="40" width="40" /></a>
 <a href="https://projecteuler.net/progress=darkness.prophet" title="Project Euler profile"><img hspace="6" src="assets/projecteuler-icon.png" alt="Project Euler profile" height="40" width="40" /></a>
 <a href="https://www.codewars.com/users/vlukyanets" title="Codewars profile"><img hspace="6" src="https://cdn.simpleicons.org/codewars/AA0000" alt="Codewars profile" height="40" width="40" /></a>
@@ -56,7 +56,7 @@
 <p align="center">
 <a href="https://www.gnu.org/software/bash/" title="bash"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/gnubash/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></picture></a>
 <a href="https://www.kernel.org/" title="linux"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a>
-<a href="https://git-scm.com/" title="git"><img hspace="6" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
+<a href="https://git-scm.com/" title="git"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/></a>
 <a href="https://www.docker.com/" title="docker"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a>
 <a href="https://kubernetes.io/" title="Kubernetes"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a>
 <a href="https://www.ansible.com" title="ansible"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/ansible/white"><img hspace="6" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></picture></a>
