@@ -21,6 +21,6 @@ module.exports = async (req, res) => {
 
   const completed = data.codeChallenges?.totalCompleted ?? 0;
   const rank = data.ranks?.overall?.name ?? 'unranked';
-  const color = RANK_COLORS[data.ranks?.overall?.color] ?? 'red';
+  const color = RANK_COLORS[data.ranks?.overall?.color] ?? 'lightgrey';
   badge(res, 'codewars', `${completed} kata solved (${rank})`, color);
 };
