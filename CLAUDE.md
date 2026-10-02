@@ -4,7 +4,8 @@ deployed at https://vlukyanets.vercel.app.
 - `api/*.js` are Vercel functions returning shields.io endpoint JSON; the README
   embeds them as `https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/<name>`.
 - `api/_badge.js` holds the shared response and cache header; files starting
-  with `_` are not routes. New badge = new `api/<name>.js` using it + an `<img>` in README.
+  with `_` are not routes. New badge = new `api/<name>.js` using it, an `<img>`
+  in README and its URL in `.github/workflows/links.yml`.
 - No `package.json`, no build step, plain CommonJS on Vercel's Node runtime.
 - Tests: `node --test` runs `test/badges.test.js` (CI on PRs touching `api/`
   or `test/`). Keep tests out of `api/`: every file there becomes a route.
