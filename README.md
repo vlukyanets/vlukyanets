@@ -7,7 +7,7 @@
 <p align="center">
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
 <img src="https://img.shields.io/badge/coffee_consumed-10k%2B-6f4e37?style=flat-square&logo=buymeacoffee&logoColor=white" alt="Coffee consumed" />
-<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" />
+<a href="https://www.codewars.com/users/vlukyanets"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" /></a>
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=300&style=flat-square" alt="Language of hour" />
 </p>
@@ -28,6 +28,9 @@
 <a href="https://www.spoj.com/users/valikluks95/" title="SPOJ profile"><img hspace="6" src="https://cdn.simpleicons.org/spoj" alt="SPOJ profile" height="40" width="40" /></a>
 <a href="https://rosalind.info/users/valikluks95" title="Rosalind profile"><img hspace="6" src="assets/rosalind-icon.png" alt="Rosalind profile" height="40" width="40" /></a>
 <a href="https://uoi.ua/en/data/people/846923" title="UOI profile"><img hspace="6" src="assets/uoi-icon.png" alt="UOI profile" height="40" width="40" /></a>
+</p>
+<p align="center">
+<a href="https://projecteuler.net/progress=darkness.prophet" title="Project Euler progress"><img src="https://projecteuler.net/profile/darkness.prophet.png" alt="Project Euler progress" width="200" height="60" /></a>
 </p>
 
 <h3 align="center">Zone of interests:</h3>
