@@ -14,10 +14,10 @@
 </p>
 
 <table align="center">
-<tr><td>🌱</td><td>Interested in</td><td><b>Rust and Android app development</b></td></tr>
-<tr><td>🔬</td><td>Currently investigating</td><td><b>extending Claude with skills/extensions</b></td></tr>
-<tr><td>💬</td><td>Ask me about</td><td><b>C/C++</b></td></tr>
-<tr><td>📫</td><td>Reach me</td><td><a href="mailto:valikluks95@gmail.com"><b>valikluks95@gmail.com</b></a></td></tr>
+<tr><td>🌱 Interested in</td><td><b>Rust and Android app development</b></td></tr>
+<tr><td>🔬 Currently investigating</td><td><b>extending Claude with skills/extensions</b></td></tr>
+<tr><td>💬 Ask me about</td><td><b>C/C++</b></td></tr>
+<tr><td>📫 Reach me</td><td><a href="mailto:valikluks95@gmail.com"><b>valikluks95@gmail.com</b></a></td></tr>
 </table>
 
 <h3 align="center">Profiles:</h3>
