@@ -6,6 +6,8 @@ deployed at https://vlukyanets.vercel.app.
 - `api/_badge.js` holds the shared response and cache header; files starting
   with `_` are not routes. New badge = new `api/<name>.js` using it + an `<img>` in README.
 - No `package.json`, no build step, plain CommonJS on Vercel's Node runtime.
+- Tests: `node --test` runs `test/badges.test.js` (CI on PRs touching `api/`
+  or `test/`). Keep tests out of `api/`: every file there becomes a route.
 - `vercel.json`: root redirects to the GitHub profile; builds are skipped
   unless `api/` or `vercel.json` changed.
 - Logos that third-party sites may move live in `assets/`.

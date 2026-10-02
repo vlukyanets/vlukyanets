@@ -1,0 +1,16 @@
+name: Test badges
+
+on:
+  push:
+    branches: [master]
+    paths: [api/**, test/**]
+  pull_request:
+    paths: [api/**, test/**]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # Node preinstalled on the runner is enough: no dependencies
+      - run: node --test
