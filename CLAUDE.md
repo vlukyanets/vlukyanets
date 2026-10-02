@@ -6,6 +6,9 @@ deployed at https://vlukyanets.vercel.app.
 - `api/_badge.js` holds the shared response and cache header; files starting
   with `_` are not routes. New badge = new `api/<name>.js` using it, an `<img>`
   in README and its URL in `.github/workflows/links.yml`.
+- Merge a new endpoint before the README badge that uses it: right after a merge
+  Vercel is still deploying, and shields.io caches the 404 as "resource not found"
+  for `cacheSeconds`.
 - No `package.json`, no build step, plain CommonJS on Vercel's Node runtime.
 - Tests: `node --test` runs `test/badges.test.js` (CI on PRs touching `api/`
   or `test/`). Keep tests out of `api/`: every file there becomes a route.
