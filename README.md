@@ -40,7 +40,7 @@
 <td align="center"><a href="https://isocpp.org/" title="C++"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.python.org" title="Python"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a></td>
 <td align="center"><a href="https://learn.microsoft.com/en-us/dotnet/csharp/" title="C#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40"/></a></td>
-<td align="center"><a href="https://www.rust-lang.org/" title="Rust"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg" alt="Rust" width="40" height="40"/></a></td>
+<td align="center"><a href="https://www.rust-lang.org/" title="Rust"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/rust/white"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-original.svg" alt="Rust" width="40" height="40"/></picture></a></td>
 <td align="center"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.typescriptlang.org/" title="TypeScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TypeScript" width="40" height="40"/></a></td>
 <td align="center"><a href="https://kotlinlang.org/" title="Kotlin"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="40" height="40"/></a></td>
@@ -50,9 +50,9 @@
 <table align="center">
 <tr>
 <td align="center"><a href="https://react.dev/" title="React.JS"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React.JS" width="40" height="40" /></a></td>
-<td align="center"><a href="https://nextjs.org/" title="Next.JS"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.JS" width="40" height="40" /></a></td>
-<td align="center"><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" title="ASP.NET Core"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-plain.svg" alt="ASP.NET Core" width="40" height="40"/></a></td>
-<td align="center"><a href="https://tokio.rs/" title="Tokio"><img src="https://cdn.simpleicons.org/tokio" alt="Tokio" width="40" height="40"/></a></td>
+<td align="center"><a href="https://nextjs.org/" title="Next.JS"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/nextdotjs/white"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="Next.JS" width="40" height="40" /></picture></a></td>
+<td align="center"><a href="https://dotnet.microsoft.com/en-us/apps/aspnet" title="ASP.NET Core"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/dotnet/white"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-plain.svg" alt="ASP.NET Core" width="40" height="40"/></picture></a></td>
+<td align="center"><a href="https://tokio.rs/" title="Tokio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/tokio/white"><img src="https://cdn.simpleicons.org/tokio" alt="Tokio" width="40" height="40"/></picture></a></td>
 <td align="center"><a href="https://learn.microsoft.com/en-us/ef/" title="Entity Framework"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/entityframeworkcore/entityframeworkcore-original.svg" alt="Entity Framework" width="40" height="40"/></a></td>
 <td align="center"><a href="https://developer.android.com/jetpack/compose" title="Jetpack Compose"><img src="https://cdn.simpleicons.org/jetpackcompose" alt="Jetpack Compose" width="40" height="40"/></a></td>
 <td align="center"><a href="https://developer.android.com/" title="Android"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" alt="Android" width="40" height="40"/></a></td>
@@ -61,12 +61,12 @@
 
 <table align="center">
 <tr>
-<td align="center"><a href="https://www.gnu.org/software/bash/" title="bash"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></a></td>
+<td align="center"><a href="https://www.gnu.org/software/bash/" title="bash"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/gnubash/white"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" alt="bash" width="40" height="40"/></picture></a></td>
 <td align="center"><a href="https://www.kernel.org/" title="linux"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a></td>
 <td align="center"><a href="https://git-scm.com/" title="git"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a></td>
 <td align="center"><a href="https://www.docker.com/" title="docker"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/></a></td>
 <td align="center"><a href="https://kubernetes.io/" title="Kubernetes"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40"/></a></td>
-<td align="center"><a href="https://www.ansible.com" title="ansible"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></a></td>
+<td align="center"><a href="https://www.ansible.com" title="ansible"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/ansible/white"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg" alt="ansible" width="40" height="40"/></picture></a></td>
 <td align="center"><a href="https://github.com/features/actions" title="GitHub Actions"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" width="40" height="40"/></a></td>
 <td align="center"><a href="https://cmake.org/" title="cmake"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cmake/cmake-original.svg" alt="cmake" width="40" height="40"/></a></td>
 </tr>
@@ -82,7 +82,7 @@
 <td align="center"><a href="https://redis.io/" title="Redis"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="Redis" width="40" height="40"/></a></td>
 <td align="center"><a href="https://claude.com/" title="Claude"><img src="https://cdn.simpleicons.org/claude" alt="Claude" width="40" height="40"/></a></td>
 <td align="center"><a href="https://gemini.google.com/" title="Gemini"><img src="https://cdn.simpleicons.org/googlegemini" alt="Gemini" width="40" height="40"/></a></td>
-<td align="center"><a href="https://lmstudio.ai/" title="LM Studio"><img src="https://cdn.simpleicons.org/lmstudio" alt="LM Studio" width="40" height="40"/></a></td>
+<td align="center"><a href="https://lmstudio.ai/" title="LM Studio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/lmstudio/white"><img src="https://cdn.simpleicons.org/lmstudio" alt="LM Studio" width="40" height="40"/></picture></a></td>
 </tr>
 </table>
 
