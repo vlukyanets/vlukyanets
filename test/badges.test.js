@@ -38,30 +38,35 @@ test('language and coffee return shields endpoint JSON', async () => {
   for (const name of ['language', 'coffee']) assertBadge(await call(name));
 });
 
-test('uptime covers every range', async (t) => {
-  // the middle of the Math.random range that maps to `m` minutes
-  const minutes = (m) => (m - 0.5) / (24 * 60);
+// Lviv is UTC+2 in winter and UTC+3 in summer; 5 Jan 2026 is a Monday
+const kyivWinter = (day, hour, minute = 0) => Date.UTC(2026, 0, day, hour - 2, minute);
+
+test('uptime counts from 08:00 Lviv time and is offline from 01:00', async (t) => {
+  t.mock.method(Date, 'now', () => 0);
   const cases = [
-    [[0.05], 'chilling (offline)', 'blue'],
-    [[0.5, minutes(1)], '1m (fresh)', 'brightgreen'],
-    [[0.5, minutes(59)], '59m (fresh)', 'brightgreen'],
-    [[0.5, minutes(60)], '1h 0m', 'green'],
-    [[0.5, minutes(4 * 60)], '4h 0m (needs coffee)', 'yellow'],
-    [[0.5, minutes(10 * 60)], '10h 0m (running on fumes)', 'orange'],
-    [[0.5, minutes(16 * 60)], '16h 0m (send help)', 'critical'],
-    [[0.5, minutes(24 * 60)], '24h 0m (send help)', 'critical'],
+    [kyivWinter(6, 8), '0m (fresh)', 'brightgreen'],
+    [kyivWinter(6, 8, 59), '59m (fresh)', 'brightgreen'],
+    [kyivWinter(6, 9), '1h 0m', 'green'],
+    [kyivWinter(6, 12), '4h 0m (needs coffee)', 'yellow'],
+    [kyivWinter(6, 18), '10h 0m (running on fumes)', 'orange'],
+    [kyivWinter(7, 0), '16h 0m (send help)', 'critical'],
+    [kyivWinter(7, 0, 59), '16h 59m (send help)', 'critical'],
+    [kyivWinter(7, 1), 'chilling (offline)', 'blue'],
+    [kyivWinter(7, 7, 59), 'chilling (offline)', 'blue'],
+    // summer time: 05:00 UTC is 08:00 in Lviv
+    [Date.UTC(2026, 6, 7, 5), '0m (fresh)', 'brightgreen'],
   ];
-  for (const [randoms, message, color] of cases) {
-    mockRandom(t, ...randoms);
+  for (const [now, message, color] of cases) {
+    Date.now.mock.mockImplementation(() => now);
     const res = await call('uptime');
     assertBadge(res);
-    assert.deepStrictEqual([res.body.message, res.body.color], [message, color]);
-    Math.random.mock.restore();
+    assert.deepStrictEqual([res.body.message, res.body.color], [message, color], new Date(now).toISOString());
   }
 });
 
-test('mood picks every mood', async (t) => {
+test('mood picks every mood on a plain day', async (t) => {
   const { MOODS } = require('../api/mood');
+  t.mock.method(Date, 'now', () => kyivWinter(6, 12)); // Tuesday noon
   for (let i = 0; i < MOODS.length; i++) {
     mockRandom(t, (i + 0.5) / MOODS.length);
     const res = await call('mood');
@@ -69,6 +74,29 @@ test('mood picks every mood', async (t) => {
     assert.strictEqual(res.body.message, MOODS[i].message);
     Math.random.mock.restore();
   }
+});
+
+test('mood picks day moods half the time on their days', async (t) => {
+  const { MOODS, DAY_MOODS } = require('../api/mood');
+  t.mock.method(Date, 'now', () => 0);
+  // 5 Jan 2026 is a Monday, so day 5 + i is Mon..Sun
+  const weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  for (const [weekday, moods] of Object.entries(DAY_MOODS)) {
+    Date.now.mock.mockImplementation(() => kyivWinter(5 + weekdays.indexOf(weekday), 12));
+    mockRandom(t, 0.25, 0);
+    assert.strictEqual((await call('mood')).body.message, moods[0].message, weekday);
+    Math.random.mock.restore();
+    mockRandom(t, 0.75, 0);
+    assert.strictEqual((await call('mood')).body.message, MOODS[0].message, weekday);
+    Math.random.mock.restore();
+  }
+});
+
+test('mood is asleep while uptime is offline', async (t) => {
+  t.mock.method(Date, 'now', () => kyivWinter(7, 3));
+  const res = await call('mood');
+  assertBadge(res);
+  assert.strictEqual(res.body.message, 'asleep (probably)');
 });
 
 test('language list has an article and a valid logo slug for each entry', () => {
