@@ -18,6 +18,8 @@ const assertBadge = (res) => {
   assert.strictEqual(res.statusCode, 200);
   assert.strictEqual(res.body.schemaVersion, 1);
   for (const key of ['label', 'message', 'color']) assert.ok(res.body[key], `${key} is empty`);
+  // shields.io reads the cache length from the JSON, Vercel from the header
+  assert.strictEqual(res.headers['Cache-Control'], `public, max-age=0, s-maxage=${res.body.cacheSeconds}`);
 };
 
 const withFetch = async (fake, fn) => {
@@ -83,7 +85,10 @@ test('language stays the same within an hour', async (t) => {
   t.mock.method(Date, 'now', () => hourStart);
   const first = (await call('language')).body.message;
   Date.now.mock.mockImplementation(() => hourStart + 3599 * 1000);
-  assert.strictEqual((await call('language')).body.message, first);
+  const last = (await call('language')).body;
+  assert.strictEqual(last.message, first);
+  // cached until the hour ends
+  assert.strictEqual(last.cacheSeconds, 1);
 });
 
 test('language link redirects to Wikipedia', async (t) => {
@@ -120,6 +125,7 @@ test('codewars falls back when the API is down', () => withFetch(
       const res = await call('codewars');
       assertBadge(res);
       assert.strictEqual(res.body.message, 'unavailable');
+      assert.strictEqual(res.body.cacheSeconds, 300);
     } finally { console.error = realError; }
   },
 ));
@@ -134,6 +140,9 @@ test('README badges and the weekly link check use existing endpoints', () => {
     .sort();
 
   // a new endpoint is merged before its README badge, so README may lag behind
-  for (const name of endpoints(read('README.md'))) assert.ok(routes.includes(name), `README uses missing api/${name}.js`);
+  const readme = read('README.md');
+  for (const name of endpoints(readme)) assert.ok(routes.includes(name), `README uses missing api/${name}.js`);
+  // shields.io takes the longest of the URL and JSON cacheSeconds, so a URL value would override the endpoint's
+  assert.doesNotMatch(readme, /cacheSeconds=/, 'set cacheSeconds in the endpoint, not the README badge URL');
   assert.deepStrictEqual(endpoints(read('.github/workflows/links.yml')), routes, 'links.yml endpoints differ from api/');
 });

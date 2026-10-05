@@ -5,11 +5,11 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=F7F7F7&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Average+Python+enjoyer;Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history;Pair+programming+with+an+LLM;I+use+Arch+Linux+BTW;Happy+father+of+dogs+and+parrots"><img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1250&color=24292F&center=true&vCenter=true&width=600&lines=Software+Engineer;%F0%9F%87%BA%F0%9F%87%A6+Lviv%2C+Ukraine;C%2FC%2B%2B+veteran+(been+in+it+way+too+long);Average+Python+enjoyer;Currently+investigating+Rust;Docker+enthusiast;Always+debugging+something;Solving+Project+Euler+problems;Enjoys+teaching+and+mentoring;Former+competitive+programmer;Trusts+neither+words+nor+clean+commit+history;Pair+programming+with+an+LLM;I+use+Arch+Linux+BTW;Happy+father+of+dogs+and+parrots" alt="Software Engineer from Lviv, Ukraine. C/C++ veteran, average Python enjoyer, currently investigating Rust, Docker enthusiast, former competitive programmer, solving Project Euler problems, enjoys teaching and mentoring, happy father of dogs and parrots." /></picture>
 </p>
 <p align="center">
-<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&cacheSeconds=1800&style=flat-square" alt="Uptime" />
-<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/coffee&cacheSeconds=1800&style=flat-square" alt="Coffee consumed" />
-<a href="https://www.codewars.com/users/vlukyanets"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" /></a>
-<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
-<a href="https://vlukyanets.vercel.app/api/language?go" title="Read about this language"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=300&style=flat-square" alt="Language of the hour" /></a>
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/uptime&style=flat-square" alt="Uptime" />
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/coffee&style=flat-square" alt="Coffee consumed" />
+<a href="https://www.codewars.com/users/vlukyanets"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&style=flat-square" alt="Codewars stats" /></a>
+<img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&style=flat-square" alt="Current mood" />
+<a href="https://vlukyanets.vercel.app/api/language?go" title="Read about this language"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&style=flat-square" alt="Language of the hour" /></a>
 </p>
 
 <table align="center">
