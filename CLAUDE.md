@@ -4,14 +4,17 @@ deployed at https://vlukyanets.vercel.app.
 - `api/*.js` are Vercel functions returning shields.io endpoint JSON; the README
   embeds them as `https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/<name>`.
 - `api/_badge.js` holds the shared response and cache header; files starting
-  with `_` are not routes. New badge = new `api/<name>.js` using it, an `<img>`
-  in README and its URL in `.github/workflows/links.yml`.
+  with `_` are not routes. New badge = new `api/<name>.js` using it with its URL
+  in `.github/workflows/links.yml`, then an `<img>` in README; a test checks
+  that the three agree.
 - Merge a new endpoint before the README badge that uses it: right after a merge
   Vercel is still deploying, and shields.io caches the 404 as "resource not found"
   for `cacheSeconds`.
 - No `package.json`, no build step, plain CommonJS on Vercel's Node runtime.
-- Tests: `node --test` runs `test/badges.test.js` (CI on PRs touching `api/`
-  or `test/`). Keep tests out of `api/`: every file there becomes a route.
+- Tests: `node --test` runs `test/badges.test.js` (CI on PRs touching `api/`,
+  `test/`, README or the workflows). Mock `Math.random` and `Date.now` so every
+  branch runs each time. Keep tests out of `api/`: every file there becomes a route.
+- CI pins the Node.js major in `test.yml`; keep it equal to the Vercel project setting.
 - `vercel.json`: root redirects to the GitHub profile; builds are skipped
   unless `api/` or `vercel.json` changed.
 - Logos that third-party sites may move live in `assets/`.
@@ -27,8 +30,8 @@ deployed at https://vlukyanets.vercel.app.
   `assets/` as an 80×80 PNG (shown at 40px), cut from the site's own artwork,
   on a rounded tile when the mark needs a background to stay visible.
 - Check README changes on a phone width too: no row or table wider than ~340px.
-- `.github/workflows/links.yml` checks README links and the badge endpoints
-  weekly and opens an issue on failures; actions are pinned by SHA and bumped by Dependabot.
+- `.github/workflows/links.yml` checks README links, the badge endpoints and every
+  language article and logo weekly and opens an issue on failures; actions are pinned by SHA and bumped by Dependabot.
 
 ## Commits and branches
 - Make changes in separate branch
