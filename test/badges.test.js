@@ -42,7 +42,7 @@ test('language and coffee return shields endpoint JSON', async () => {
 const kyivWinter = (day, hour, minute = 0) => Date.UTC(2026, 0, day, hour - 2, minute);
 
 test('uptime workday starts between 09:00 and 12:00 and lasts 4 to 12 hours', () => {
-  const { workday } = require('../api/uptime');
+  const workday = require('../api/_workday');
   const days = Array.from({ length: 366 }, (_, i) => workday(20454 + i));
   for (const { start, length } of days) {
     assert.ok(start >= 9 * 60 && start <= 12 * 60, `start ${start}`);
@@ -54,7 +54,7 @@ test('uptime workday starts between 09:00 and 12:00 and lasts 4 to 12 hours', ()
 
 test('uptime follows the workday of the Lviv date', async (t) => {
   const clock = require('../api/_clock');
-  const { workday } = require('../api/uptime');
+  const workday = require('../api/_workday');
   t.mock.method(Date, 'now', () => 0);
   const hm = (m) => (m < 60 ? `${m}m` : `${Math.floor(m / 60)}h ${m % 60}m`);
 
@@ -90,7 +90,8 @@ test('uptime follows the workday of the Lviv date', async (t) => {
 
 test('mood picks every mood on a plain day', async (t) => {
   const { MOODS } = require('../api/mood');
-  t.mock.method(Date, 'now', () => kyivWinter(6, 12)); // Tuesday noon
+  // Tuesday noon; every workday starts by 12:00 and lasts at least 4 hours, so noon is always work time
+  t.mock.method(Date, 'now', () => kyivWinter(6, 12));
   for (let i = 0; i < MOODS.length; i++) {
     mockRandom(t, (i + 0.5) / MOODS.length);
     const res = await call('mood');
@@ -114,6 +115,32 @@ test('mood picks day moods half the time on their days', async (t) => {
     assert.strictEqual((await call('mood')).body.message, MOODS[0].message, weekday);
     Math.random.mock.restore();
   }
+});
+
+test('mood switches to evening moods after the workday', async (t) => {
+  const clock = require('../api/_clock');
+  const workday = require('../api/_workday');
+  const { MOODS, EVENING_MOODS } = require('../api/mood');
+  t.mock.method(Date, 'now', () => 0);
+  const midnight = kyivWinter(6, 0); // a Tuesday, no day moods
+  const { start, length } = workday(clock(midnight).day);
+  const moodAt = async (minutes, ...randoms) => {
+    Date.now.mock.mockImplementation(() => midnight + minutes * 60 * 1000);
+    mockRandom(t, ...randoms);
+    const res = await call('mood');
+    Math.random.mock.restore();
+    assertBadge(res);
+    return res.body.message;
+  };
+
+  assert.strictEqual(await moodAt(start + length - 1, 0), MOODS[0].message);
+  for (let i = 0; i < EVENING_MOODS.length; i++) {
+    assert.strictEqual(await moodAt(start + length, (i + 0.5) / EVENING_MOODS.length), EVENING_MOODS[i].message);
+  }
+  // past midnight, before falling asleep at 01:00
+  assert.strictEqual(await moodAt(24 * 60 + 30, 0), EVENING_MOODS[0].message);
+  // morning before the workday starts is not evening
+  assert.strictEqual(await moodAt(start - 1, 0), MOODS[0].message);
 });
 
 test('mood is asleep from 01:00 to 08:00', async (t) => {

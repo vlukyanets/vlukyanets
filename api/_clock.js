@@ -25,3 +25,5 @@ module.exports = (now = Date.now()) => {
     awakeMinutes: sinceWakeUp < AWAKE ? sinceWakeUp : null,
   };
 };
+
+module.exports.WAKE_UP = WAKE_UP;
