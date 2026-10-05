@@ -21,3 +21,6 @@ module.exports = (req, res) => {
   const mood = MOODS[Math.floor(Math.random() * MOODS.length)];
   badge(res, 'current mood', mood.message, mood.color);
 };
+
+// read by the tests
+module.exports.MOODS = MOODS;

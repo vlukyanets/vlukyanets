@@ -81,3 +81,6 @@ module.exports = (req, res) => {
   }
   badge(res, 'language of the hour', name, 'blueviolet', secondsLeft, logo && { namedLogo: logo });
 };
+
+// read by the tests and the weekly link check
+module.exports.LANGUAGES = LANGUAGES;
