@@ -79,5 +79,8 @@ module.exports = (req, res) => {
     res.setHeader('Cache-Control', `public, max-age=0, s-maxage=${secondsLeft}`);
     return res.redirect(302, `https://en.wikipedia.org/wiki/${article}`);
   }
-  badge(res, 'language of hour', name, 'blueviolet', secondsLeft, logo && { namedLogo: logo });
+  badge(res, 'language of the hour', name, 'blueviolet', secondsLeft, logo && { namedLogo: logo });
 };
+
+// read by the tests and the weekly link check
+module.exports.LANGUAGES = LANGUAGES;

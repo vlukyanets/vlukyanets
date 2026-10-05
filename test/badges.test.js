@@ -1,6 +1,8 @@
 // Run with `node --test`. Lives outside api/ because every file there becomes a Vercel route.
 const test = require('node:test');
 const assert = require('node:assert');
+const fs = require('node:fs');
+const path = require('node:path');
 
 const call = async (name, req = {}) => {
   const res = { headers: {} };
@@ -24,10 +26,56 @@ const withFetch = async (fake, fn) => {
   try { await fn(); } finally { global.fetch = realFetch; }
 };
 
-test('uptime, mood, language and coffee return shields endpoint JSON', async () => {
-  for (const name of ['uptime', 'mood', 'language', 'coffee']) {
-    for (let i = 0; i < 50; i++) assertBadge(await call(name));
+// Math.random returns the given values in order
+const mockRandom = (t, ...values) => {
+  let i = 0;
+  t.mock.method(Math, 'random', () => values[i++]);
+};
+
+test('language and coffee return shields endpoint JSON', async () => {
+  for (const name of ['language', 'coffee']) assertBadge(await call(name));
+});
+
+test('uptime covers every range', async (t) => {
+  // the middle of the Math.random range that maps to `m` minutes
+  const minutes = (m) => (m - 0.5) / (24 * 60);
+  const cases = [
+    [[0.05], 'chilling (offline)', 'blue'],
+    [[0.5, minutes(1)], '1m (fresh)', 'brightgreen'],
+    [[0.5, minutes(59)], '59m (fresh)', 'brightgreen'],
+    [[0.5, minutes(60)], '1h 0m', 'green'],
+    [[0.5, minutes(4 * 60)], '4h 0m (needs coffee)', 'yellow'],
+    [[0.5, minutes(10 * 60)], '10h 0m (running on fumes)', 'orange'],
+    [[0.5, minutes(16 * 60)], '16h 0m (send help)', 'critical'],
+    [[0.5, minutes(24 * 60)], '24h 0m (send help)', 'critical'],
+  ];
+  for (const [randoms, message, color] of cases) {
+    mockRandom(t, ...randoms);
+    const res = await call('uptime');
+    assertBadge(res);
+    assert.deepStrictEqual([res.body.message, res.body.color], [message, color]);
+    Math.random.mock.restore();
   }
+});
+
+test('mood picks every mood', async (t) => {
+  const { MOODS } = require('../api/mood');
+  for (let i = 0; i < MOODS.length; i++) {
+    mockRandom(t, (i + 0.5) / MOODS.length);
+    const res = await call('mood');
+    assertBadge(res);
+    assert.strictEqual(res.body.message, MOODS[i].message);
+    Math.random.mock.restore();
+  }
+});
+
+test('language list has an article and a valid logo slug for each entry', () => {
+  const { LANGUAGES } = require('../api/language');
+  for (const [name, article, logo] of LANGUAGES) {
+    assert.match(article, /^\S+$/, name);
+    if (logo !== undefined) assert.match(logo, /^[a-z0-9]+$/, name);
+  }
+  assert.strictEqual(new Set(LANGUAGES.map(([name]) => name)).size, LANGUAGES.length, 'duplicate language');
 });
 
 test('language stays the same within an hour', async (t) => {
@@ -75,3 +123,17 @@ test('codewars falls back when the API is down', () => withFetch(
     } finally { console.error = realError; }
   },
 ));
+
+test('README badges and the weekly link check use existing endpoints', () => {
+  const root = path.join(__dirname, '..');
+  const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
+  const endpoints = (text) => [...new Set([...text.matchAll(/vlukyanets\.vercel\.app\/api\/(\w+)/g)].map((m) => m[1]))].sort();
+  const routes = fs.readdirSync(path.join(root, 'api'))
+    .filter((file) => file.endsWith('.js') && !file.startsWith('_'))
+    .map((file) => file.slice(0, -3))
+    .sort();
+
+  // a new endpoint is merged before its README badge, so README may lag behind
+  for (const name of endpoints(read('README.md'))) assert.ok(routes.includes(name), `README uses missing api/${name}.js`);
+  assert.deepStrictEqual(endpoints(read('.github/workflows/links.yml')), routes, 'links.yml endpoints differ from api/');
+});

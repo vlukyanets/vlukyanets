@@ -9,14 +9,13 @@
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/coffee&cacheSeconds=1800&style=flat-square" alt="Coffee consumed" />
 <a href="https://www.codewars.com/users/vlukyanets"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/codewars&cacheSeconds=1800&style=flat-square" alt="Codewars stats" /></a>
 <img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/mood&cacheSeconds=1800&style=flat-square" alt="Current mood" />
-<a href="https://vlukyanets.vercel.app/api/language?go" title="Read about this language"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=300&style=flat-square" alt="Language of hour" /></a>
+<a href="https://vlukyanets.vercel.app/api/language?go" title="Read about this language"><img src="https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/language&cacheSeconds=300&style=flat-square" alt="Language of the hour" /></a>
 </p>
 
 <table align="center">
 <tr><td>🌱 Interested in</td><td><b>Rust and Android app development</b></td></tr>
 <tr><td>🔬 Currently investigating</td><td><b>extending Claude with skills/extensions</b></td></tr>
 <tr><td>💬 Ask me about</td><td><b>C/C++</b></td></tr>
-<tr><td>📫 Reach me</td><td><a href="mailto:valikluks95@gmail.com"><b>valikluks95@gmail.com</b></a></td></tr>
 </table>
 
 <h3 align="center">Profiles</h3>
