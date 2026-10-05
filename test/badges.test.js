@@ -41,26 +41,50 @@ test('language and coffee return shields endpoint JSON', async () => {
 // Lviv is UTC+2 in winter and UTC+3 in summer; 5 Jan 2026 is a Monday
 const kyivWinter = (day, hour, minute = 0) => Date.UTC(2026, 0, day, hour - 2, minute);
 
-test('uptime counts from 08:00 Lviv time and is offline from 01:00', async (t) => {
+test('uptime workday starts between 09:00 and 12:00 and lasts 4 to 12 hours', () => {
+  const { workday } = require('../api/uptime');
+  const days = Array.from({ length: 366 }, (_, i) => workday(20454 + i));
+  for (const { start, length } of days) {
+    assert.ok(start >= 9 * 60 && start <= 12 * 60, `start ${start}`);
+    assert.ok(length >= 4 * 60 && length <= 12 * 60, `length ${length}`);
+  }
+  assert.ok(new Set(days.map(({ start }) => start)).size > 100, 'start barely changes between days');
+  assert.ok(new Set(days.map(({ length }) => length)).size > 100, 'length barely changes between days');
+});
+
+test('uptime follows the workday of the Lviv date', async (t) => {
+  const clock = require('../api/_clock');
+  const { workday } = require('../api/uptime');
   t.mock.method(Date, 'now', () => 0);
-  const cases = [
-    [kyivWinter(6, 8), '0m (fresh)', 'brightgreen'],
-    [kyivWinter(6, 8, 59), '59m (fresh)', 'brightgreen'],
-    [kyivWinter(6, 9), '1h 0m', 'green'],
-    [kyivWinter(6, 12), '4h 0m (needs coffee)', 'yellow'],
-    [kyivWinter(6, 18), '10h 0m (running on fumes)', 'orange'],
-    [kyivWinter(7, 0), '16h 0m (send help)', 'critical'],
-    [kyivWinter(7, 0, 59), '16h 59m (send help)', 'critical'],
-    [kyivWinter(7, 1), 'chilling (offline)', 'blue'],
-    [kyivWinter(7, 7, 59), 'chilling (offline)', 'blue'],
-    // summer time: 05:00 UTC is 08:00 in Lviv
-    [Date.UTC(2026, 6, 7, 5), '0m (fresh)', 'brightgreen'],
-  ];
-  for (const [now, message, color] of cases) {
-    Date.now.mock.mockImplementation(() => now);
-    const res = await call('uptime');
-    assertBadge(res);
-    assert.deepStrictEqual([res.body.message, res.body.color], [message, color], new Date(now).toISOString());
+  const hm = (m) => (m < 60 ? `${m}m` : `${Math.floor(m / 60)}h ${m % 60}m`);
+
+  // a long and a short day, so both last-stretch messages are covered
+  const midnights = Array.from({ length: 60 }, (_, i) => kyivWinter(6 + i, 0));
+  const long = midnights.find((m) => workday(clock(m).day).length >= 10 * 60);
+  const short = midnights.find((m) => workday(clock(m).day).length < 10 * 60);
+  for (const midnight of [long, short]) {
+    const { start, length } = workday(clock(midnight).day);
+    const half = Math.ceil(length / 2);
+    const late = Math.ceil(length * 0.8);
+    const [lastStretch, lastColor] = length >= 10 * 60 ? ['send help', 'critical'] : ['running on fumes', 'orange'];
+    // [minutes after midnight, message, color]
+    const cases = [
+      [start - 1, 'chilling (offline)', 'blue'],
+      [start, '0m (fresh)', 'brightgreen'],
+      [start + 59, '59m (fresh)', 'brightgreen'],
+      [start + 60, '1h 0m', 'green'],
+      [start + half, `${hm(half)} (needs coffee)`, 'yellow'],
+      [start + late, `${hm(late)} (${lastStretch})`, lastColor],
+      [start + length - 30, `${hm(length - 30)} (wrapping up)`, 'blue'],
+      [start + length, `logged off after ${hm(length)}`, 'lightgrey'],
+      [24 * 60 - 1, `logged off after ${hm(length)}`, 'lightgrey'],
+    ];
+    for (const [minutes, message, color] of cases) {
+      Date.now.mock.mockImplementation(() => midnight + minutes * 60 * 1000);
+      const res = await call('uptime');
+      assertBadge(res);
+      assert.deepStrictEqual([res.body.message, res.body.color], [message, color], `workday ${start}+${length}, at ${minutes}`);
+    }
   }
 });
 
@@ -92,7 +116,7 @@ test('mood picks day moods half the time on their days', async (t) => {
   }
 });
 
-test('mood is asleep while uptime is offline', async (t) => {
+test('mood is asleep from 01:00 to 08:00', async (t) => {
   t.mock.method(Date, 'now', () => kyivWinter(7, 3));
   const res = await call('mood');
   assertBadge(res);
