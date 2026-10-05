@@ -12,6 +12,15 @@ jobs:
       issues: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # the badge links one language per hour, so list every article and logo it can show;
+      # the Simple Icons CDN stands in for the shields.io namedLogo set
+      - run: |
+          node -e '
+            for (const [, article, logo] of require("./api/language").LANGUAGES) {
+              console.log(`https://en.wikipedia.org/wiki/${article.replace(/\(/g, "%28").replace(/\)/g, "%29")}`);
+              if (logo) console.log(`https://cdn.simpleicons.org/${logo}`);
+            }
+          ' > language-links.txt
       - id: lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
@@ -26,6 +35,7 @@ jobs:
             --exclude isocpp\.org
             --exclude gemini\.google\.com
             README.md
+            language-links.txt
             https://vlukyanets.vercel.app/api/uptime
             https://vlukyanets.vercel.app/api/codewars
             https://vlukyanets.vercel.app/api/mood
