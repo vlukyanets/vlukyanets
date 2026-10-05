@@ -35,8 +35,11 @@ deployed at https://vlukyanets.vercel.app.
   `assets/` as an 80×80 PNG (shown at 40px), cut from the site's own artwork,
   on a rounded tile when the mark needs a background to stay visible.
 - Check README changes on a phone width too: no row or table wider than ~340px.
-- `.github/workflows/links.yml` checks README links, the badge endpoints and every
-  language article and logo weekly and opens an issue on failures; actions are pinned by SHA and bumped by Dependabot.
+- `.github/workflows/links.yml` checks README links and every language article and
+  logo weekly; `.github/scripts/check-badges.js` checks what the deployed endpoints
+  return, weekly and after each production deploy. Failures open or update one
+  `broken-links` issue, a clean run closes it. Actions are pinned by SHA and bumped
+  by Dependabot; workflows get read-only tokens unless a job needs more.
 
 ## Commits and branches
 - Make changes in separate branch

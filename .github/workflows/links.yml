@@ -4,14 +4,25 @@ on:
   schedule:
     - cron: "0 6 * * 1"
   workflow_dispatch:
+  # Vercel reports each deployment to GitHub; check the badges once production is live
+  deployment_status:
+
+# one run at a time so two runs don't each open an issue
+concurrency: links
 
 jobs:
   lychee:
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' && startsWith(github.event.deployment.environment, 'Production'))
     runs-on: ubuntu-24.04
     permissions:
+      contents: read
       issues: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       # the badge links one language per hour, so list every article and logo it can show;
       # the Simple Icons CDN stands in for the shields.io namedLogo set
       - run: |
@@ -42,16 +53,25 @@ jobs:
             https://vlukyanets.vercel.app/api/language
             https://vlukyanets.vercel.app/api/coffee
           fail: false
+      # lychee only sees the status code, and a badge whose data source broke still answers 200
+      - id: badges
+        run: node .github/scripts/check-badges.js > badges.md || echo "failed=true" >> "$GITHUB_OUTPUT"
+      - run: cat badges.md lychee/out.md > report.md
       # reuse the open issue instead of filing a new one every week
       - id: issue
-        if: steps.lychee.outputs.exit_code != 0
         run: echo "number=$(gh issue list --label broken-links --state open --limit 1 --json number --jq '.[0].number')" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ github.token }}
-      - if: steps.lychee.outputs.exit_code != 0
+      - if: steps.lychee.outputs.exit_code != 0 || steps.badges.outputs.failed
         uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
         with:
           issue-number: ${{ steps.issue.outputs.number }}
-          title: Broken links in README
-          content-filepath: ./lychee/out.md
+          title: Broken links or badges in README
+          content-filepath: ./report.md
           labels: broken-links
+      - if: steps.lychee.outputs.exit_code == 0 && !steps.badges.outputs.failed && steps.issue.outputs.number
+        run: gh issue close "$NUMBER" --comment "Links and badges are OK again, see $RUN_URL"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ steps.issue.outputs.number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
