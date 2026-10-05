@@ -1,4 +1,5 @@
 const badge = require('./_badge');
+const hash = require('./_hash');
 
 // TIOBE index top 50 (https://www.tiobe.com/tiobe-index/), plus a few requested extras.
 // [name, English Wikipedia article, shields.io logo slug if it has one]
@@ -60,16 +61,9 @@ const LANGUAGES = [
   ['Brainfuck', 'Brainfuck'],
 ];
 
-// Integer hash (lowbias32) so the pick looks random but is the same for everyone within an hour.
-const hash = (x) => {
-  x ^= x >>> 16; x = Math.imul(x, 0x7feb352d);
-  x ^= x >>> 15; x = Math.imul(x, 0x846ca68b);
-  x ^= x >>> 16;
-  return x >>> 0;
-};
-
 module.exports = (req, res) => {
   const now = Math.floor(Date.now() / 1000);
+  // the hash makes the pick look random but keeps it the same for everyone within an hour
   const [name, article, logo] = LANGUAGES[hash(Math.floor(now / 3600)) % LANGUAGES.length];
   // cache until the hour ends so the badge and the link switch on time
   const secondsLeft = 3600 - (now % 3600);
