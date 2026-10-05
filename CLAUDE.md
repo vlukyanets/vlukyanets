@@ -19,6 +19,7 @@ deployed at https://vlukyanets.vercel.app.
   `test/`, README or the workflows). Mock `Math.random` and `Date.now` so every
   branch runs each time. Keep tests out of `api/`: every file there becomes a route.
 - CI pins the Node.js major in `test.yml`; keep it equal to the Vercel project setting.
+  Workflows run on a pinned runner image (`ubuntu-24.04`); Dependabot does not bump it.
 - `vercel.json`: root redirects to the GitHub profile; builds are skipped
   unless `api/` or `vercel.json` changed.
 - Logos that third-party sites may move live in `assets/`.
