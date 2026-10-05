@@ -4,3 +4,7 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    # one pull request a month for all action bumps
+    groups:
+      actions:
+        patterns: ["*"]

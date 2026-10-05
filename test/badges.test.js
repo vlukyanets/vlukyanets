@@ -158,6 +158,22 @@ test('codewars falls back when the API is down', () => withFetch(
   },
 ));
 
+test('codewars handles a response without ranks or challenges', () => withFetch(
+  async () => ({ ok: true, json: async () => ({}) }),
+  async () => {
+    const res = await call('codewars');
+    assertBadge(res);
+    assert.strictEqual(res.body.message, '0 kata solved (unranked)');
+    assert.strictEqual(res.body.color, 'lightgrey');
+  },
+));
+
+test('language link is cached until the hour ends', async (t) => {
+  t.mock.method(Date, 'now', () => Date.UTC(2026, 0, 1, 12, 59, 30));
+  const res = await call('language', { query: { go: '' } });
+  assert.strictEqual(res.headers['Cache-Control'], 'public, max-age=0, s-maxage=30');
+});
+
 test('README badges and the weekly link check use existing endpoints', () => {
   const root = path.join(__dirname, '..');
   const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
