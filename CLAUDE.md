@@ -3,18 +3,23 @@ GitHub profile README (`README.md`) plus a tiny Vercel backend for its badges,
 deployed at https://vlukyanets.vercel.app.
 - `api/*.js` are Vercel functions returning shields.io endpoint JSON; the README
   embeds them as `https://img.shields.io/endpoint?url=https://vlukyanets.vercel.app/api/<name>`.
-- `api/_badge.js` holds the shared response and cache header; files starting
-  with `_` are not routes. New badge = new `api/<name>.js` using it with its URL
-  in `.github/workflows/links.yml`, then an `<img>` in README; a test checks
-  that the three agree.
+- `api/_badge.js` holds the shared response; its `cacheSeconds` goes both into the
+  Vercel cache header and the JSON, which shields.io uses for the badge cache
+  (never under 300 s). Badge URLs in README carry no `cacheSeconds`: shields.io
+  takes the longer of the two, so a URL value would override the endpoint's.
+  Files starting with `_` are not routes.
+- New badge = new `api/<name>.js` using `_badge.js` with its URL in
+  `.github/workflows/links.yml`, then an `<img>` in README; a test checks that
+  the three agree.
 - Merge a new endpoint before the README badge that uses it: right after a merge
   Vercel is still deploying, and shields.io caches the 404 as "resource not found"
-  for `cacheSeconds`.
+  for 300 s.
 - No `package.json`, no build step, plain CommonJS on Vercel's Node runtime.
 - Tests: `node --test` runs `test/badges.test.js` (CI on PRs touching `api/`,
   `test/`, README or the workflows). Mock `Math.random` and `Date.now` so every
   branch runs each time. Keep tests out of `api/`: every file there becomes a route.
 - CI pins the Node.js major in `test.yml`; keep it equal to the Vercel project setting.
+  Workflows run on a pinned runner image (`ubuntu-24.04`); Dependabot does not bump it.
 - `vercel.json`: root redirects to the GitHub profile; builds are skipped
   unless `api/` or `vercel.json` changed.
 - Logos that third-party sites may move live in `assets/`.
