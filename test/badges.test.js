@@ -1,6 +1,8 @@
 // Run with `node --test`. Lives outside api/ because every file there becomes a Vercel route.
 const test = require('node:test');
 const assert = require('node:assert');
+const fs = require('node:fs');
+const path = require('node:path');
 
 const call = async (name, req = {}) => {
   const res = { headers: {} };
@@ -121,3 +123,17 @@ test('codewars falls back when the API is down', () => withFetch(
     } finally { console.error = realError; }
   },
 ));
+
+test('README badges and the weekly link check use existing endpoints', () => {
+  const root = path.join(__dirname, '..');
+  const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
+  const endpoints = (text) => [...new Set([...text.matchAll(/vlukyanets\.vercel\.app\/api\/(\w+)/g)].map((m) => m[1]))].sort();
+  const routes = fs.readdirSync(path.join(root, 'api'))
+    .filter((file) => file.endsWith('.js') && !file.startsWith('_'))
+    .map((file) => file.slice(0, -3))
+    .sort();
+
+  // a new endpoint is merged before its README badge, so README may lag behind
+  for (const name of endpoints(read('README.md'))) assert.ok(routes.includes(name), `README uses missing api/${name}.js`);
+  assert.deepStrictEqual(endpoints(read('.github/workflows/links.yml')), routes, 'links.yml endpoints differ from api/');
+});
