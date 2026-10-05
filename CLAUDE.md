@@ -7,6 +7,7 @@ deployed at https://vlukyanets.vercel.app.
   Vercel cache header and the JSON, which shields.io uses for the badge cache
   (never under 300 s). Badge URLs in README carry no `cacheSeconds`: shields.io
   takes the longer of the two, so a URL value would override the endpoint's.
+  `api/_clock.js` gives Lviv local time to badges that follow the clock (uptime, mood).
   Files starting with `_` are not routes.
 - New badge = new `api/<name>.js` using `_badge.js` with its URL in
   `.github/workflows/links.yml`, then an `<img>` in README; a test checks that
